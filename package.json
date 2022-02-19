@@ -1,0 +1,26 @@
+{
+  "name": "cleanblog",
+  "version": "1.0.0",
+  "description": "Clean Blog Photo app",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AbdullahUguz/CleanBlog.git"
+  },
+  "keywords": [
+    "photo",
+    "app"
+  ],
+  "author": "Abdulah UĞUZ",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AbdullahUguz/CleanBlog/issues"
+  },
+  "homepage": "https://github.com/AbdullahUguz/CleanBlog#readme",
+  "devDependencies": {
+    "prettier": "2.5.1"
+  }
+}
