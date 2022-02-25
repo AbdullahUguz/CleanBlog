@@ -64,6 +64,18 @@
             <a href="http://spaceipsum.com/">Space Ipsum</a>. Photographs by
             <a href="https://www.flickr.com/photos/nasacommons/">NASA on The Commons</a>.</p>
         </div>
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <div class="text-center mt-4">
+            <a href="/posts/edit/<%= post._id %>" class="btn btn-primary  p-3 mr-5" id="sendMessageButton"><strong>Update Post</strong></a>
+
+            <a href="/posts/<%= post._id %>?_method=DELETE" class="btn btn-danger  p-3 " id="sendMessageButton"
+            onclick="return confirm('ARE YOU SURE?')"><strong>Delete Post</strong>
+            </a>
+          </div>
+        </div>
+
+        
+        
       </div>
     </div>
   </article>
