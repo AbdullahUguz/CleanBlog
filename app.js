@@ -18,7 +18,13 @@ const app = express();
 app.set('view engine', 'ejs');
 
 // connection db
-mongoose.connect('mongodb://localhost/cleanblog-test-db');
+mongoose.connect('mongodb+srv://Abdullah:sdj6KAnooGwca4va@cluster0.oqhqd.mongodb.net/cleanBlogDb?retryWrites=true&w=majority')
+.then(() => {
+  console.log('Database connected');
+})
+.catch((err) => {
+  console.log('Error in connecting database');
+});
 
 // middleware
 app.use(express.static('public'));
@@ -50,8 +56,8 @@ app.put('/posts/:id', postController.updatePost);
 // DELETE
 app.delete('/posts/:id', postController.deletePost);
 
-const PORT = 4000;
+const Port =process.env.PORT || 4000;
 
-app.listen(PORT, () => {
-  console.log(`Sunucu ${PORT} portunda baslatildi`);
+app.listen(Port, () => {
+  console.log(`Sunucu ${Port} portunda baslatildi`);
 });
